@@ -42,9 +42,9 @@ function App() {
     <>
     {/* <BrowserRouter> */}
       <Navbar title="TextUtils" aboutText="About Text" mode={mode} toggleSwitchMode={toggleSwitchMode}/>
+      <Alert alert={alert}/>
       <div className='container my-3'>  
         <TextForm heading="Enter the text to analyze" mode={mode} showAlert={showAlert}/>
-        <Alert alert={alert}/>
         {/* <About /> */}
         </div>
       {/* <Routes>

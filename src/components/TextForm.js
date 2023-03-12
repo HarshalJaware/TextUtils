@@ -26,13 +26,13 @@ export default function TextForm(props) {
         var copyText = document.getElementById("myBox");
         copyText.select();
         navigator.clipboard.writeText(copyText.value);
-        props.showAlert('Text copied','success');
-
+        props.showAlert('Text copied to clipboard','success');
     }
     
     const handleRemoveExtraSpacesClick = () =>{
         const afterRemoveSpacesText = text.replace(/\s+/g, ' ').trim();
         setText(afterRemoveSpacesText);
+        props.showAlert('Extra space removed','success');
     }
 
     const handleClearClick = () =>{
