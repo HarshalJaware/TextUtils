@@ -44,6 +44,7 @@ function App() {
       <Navbar title="TextUtils" aboutText="About Text" mode={mode} toggleSwitchMode={toggleSwitchMode}/>
       <div className='container my-3'>  
         <TextForm heading="Enter the text to analyze" mode={mode} showAlert={showAlert}/>
+        <Alert alert={alert}/>
         {/* <About /> */}
         </div>
       {/* <Routes>
